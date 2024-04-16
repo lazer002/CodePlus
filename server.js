@@ -33,7 +33,7 @@ app.get("*", (req, res) => {
     }
     )
 })
-// fwawf
+
 app.use('/',router)
 
 const PORT = process.env.PORT;
