@@ -23,7 +23,7 @@ const handleInput = (e) =>{
 const postdata=async(e)=>{
     e.preventDefault()
 
-    const res=await axios.post("http://localhost:8484/signup",user);
+    const res=await axios.post("/signup",user);
 
 if(res.status === 422 || !res){
 window.alert("invalid register" )

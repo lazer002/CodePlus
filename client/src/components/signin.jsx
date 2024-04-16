@@ -28,7 +28,7 @@ const postdata=async(e)=>{
     e.preventDefault()
 
 
-    const res=await axios.post("http://localhost:8484/signin",{user})
+    const res=await axios.post("/signin",{user})
 if(res.status === 200){
 
   navigate("/")

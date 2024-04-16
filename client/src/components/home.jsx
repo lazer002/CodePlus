@@ -63,7 +63,7 @@ function Home({crs_img,crs_name}) {
     e.preventDefault()
 
     try {
-      const ress = await axios.post("http://localhost:8484/contect", user);
+      const ress = await axios.post("/contect", user);
       console.log("Response Status:", ress.status);
 
       if (ress.status === 422) {
